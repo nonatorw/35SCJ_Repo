@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "80ee3288-ccda-4c6d-863a-90508d5cc618",
+		"name": "35SCJ - Spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cardápio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/cervejas/cardapio",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cervejas",
+						"cardapio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Incluir Cerveja",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"marca\": \"Estrela Galega\",\n\t\"teorAlcoolico\": \"8.0\",\n\t\"tipo\": \"PILSEN\",\n\t\"preco\": \"9.9\",\n\t\"datalancamento\": \"2017-01-23T21:44:00.285-03:00\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/cervejas/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cervejas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Cerveja",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"marca\": \"Estrela Galega\",\n\t\"teorAlcoolico\": \"9.0\",\n\t\"tipo\": \"ALE\",\n\t\"preco\": \"8.0\",\n\t\"datalancamento\": \"2017-01-23T21:44:00.285-03:00\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/cervejas/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cervejas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Preço da Cerveja",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"preco\": \"8.0\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/cervejas/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cervejas",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Cerveja",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8081/cervejas/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cervejas",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
