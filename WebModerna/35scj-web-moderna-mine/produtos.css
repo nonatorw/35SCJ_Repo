@@ -1,0 +1,24 @@
+header {
+  background: yellow;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px 15px 20px;
+}
+
+nav a {
+  text-transform: uppercase;
+}
+
+.caixa {
+  background: red;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.colorido span {
+  color: red;
+  font-size: 6em;
+}

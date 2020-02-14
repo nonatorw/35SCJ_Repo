@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Negociações</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+  </head>
+
+  <body class="container">
+    <h1 class="text-center">Negociações</h1>
+
+    <div id="mensagemView"></div>
+
+    <form class="form" onsubmit="negociacaoController.addNegociacao(event)">
+      <div class="form-group">
+        <label for="data">Data</label>
+        <input class="form-control" type="date"                                       required autofocus  id="data"/>
+      </div>
+
+      <div class="form-group">
+        <label for="quantidade">Quantidade</label>
+        <input class="form-control" type="number" min="1"    step="1"    value="1"    required            id="quantidade"/>
+      </div>
+
+      <div class="form-group">
+        <label for="valor">Valor</label>
+        <input class="form-control" type="number" min="0.00" step="0.10" value="0.0"  required            id="valor"/>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Incluir</button>
+    </form>
+
+    <div class="text-center">
+      <button class="btn btn-primary text-center" type="button">
+        Importar Negociações
+      </button>
+      <button class="btn btn-primary text-center" type="button">
+        Apagar
+      </button>
+    </div>
+    <br />
+    <br />
+
+    <div id="negociacoesView"></div>
+
+    <script src="js/app/controller/NegociacaoController.js"></script>
+    <script src="js/app/model/Negociacao.js"></script>
+    <script src="js/app/model/ListaNegociacoes.js"></script>
+    <script src="js/app/helper/DateHelper.js"></script>
+    <script src="js/app/view/NegociacoesView.js"></script>
+    <!--
+    <script src="js/app/models/Mensagem.js"></script>
+    <script src="js/app/views/View.js"></script>
+    <script src="js/app/views/MensagemView.js"></script>
+      -->
+
+    <script>
+      let negociacaoController = new NegociacaoController();
+    </script>
+  </body>
+</html>
