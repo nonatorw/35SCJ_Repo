@@ -32,28 +32,23 @@
     </form>
 
     <div class="text-center">
-      <button class="btn btn-primary text-center" type="button">
-        Importar Negociações
-      </button>
-      <button class="btn btn-primary text-center" type="button">
-        Apagar
-      </button>
+      <button class="btn btn-primary text-center" type="button">Importar Negociações</button>
+      <button class="btn btn-primary text-center" type="button" onclick="negociacaoController.deleteNegociacao(event)">Apagar</button>
     </div>
+
     <br />
     <br />
 
     <div id="negociacoesView"></div>
 
     <script src="js/app/controller/NegociacaoController.js"></script>
+    <script src="js/app/helper/DateHelper.js"></script>
     <script src="js/app/model/Negociacao.js"></script>
     <script src="js/app/model/ListaNegociacoes.js"></script>
-    <script src="js/app/helper/DateHelper.js"></script>
+    <script src="js/app/model/Mensagem.js"></script>
+    <script src="js/app/view/View.js"></script>
     <script src="js/app/view/NegociacoesView.js"></script>
-    <!--
-    <script src="js/app/models/Mensagem.js"></script>
-    <script src="js/app/views/View.js"></script>
-    <script src="js/app/views/MensagemView.js"></script>
-      -->
+    <script src="js/app/view/MensagemView.js"></script>
 
     <script>
       let negociacaoController = new NegociacaoController();

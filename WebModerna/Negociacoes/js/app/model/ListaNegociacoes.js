@@ -3,8 +3,12 @@ class ListaNegociacoes {
         this._negociacoes = []
     }
 
-    adiciona(negociacoes) {
+    add(negociacoes) {
         this._negociacoes.push(negociacoes)
+    }
+
+    flush() {
+        this._negociacoes = []
     }
 
     get negociacoes() {
