@@ -1,7 +1,3 @@
-*.zip
-*.class
-*.db
-
 HELP.md
 .gradle
 build/
