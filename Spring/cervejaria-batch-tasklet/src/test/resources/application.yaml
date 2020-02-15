@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url     : jdbc:h2:D:\nonatorw\db\test-fiapcervejariabatch;DB_CLOSE_ON_EXIT=FALSE
+    username: fiap
+    password: fiap
+file  :
+  path : D:\nonatorw\Spring\Spring.7z # Arquivo de leitura está no FileSystem
+  input: classpath:pessoa.txt         # Arquivo de leitura está no classpath

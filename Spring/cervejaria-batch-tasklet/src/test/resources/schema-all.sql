@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS tb_pessoa;
+
+CREATE TABLE IF NOT EXISTS tb_pessoa
+(
+    id   LONG         NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    cpf  VARCHAR(20)  NOT NULL
+);
